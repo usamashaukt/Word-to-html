@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>CVP</title>
+  </head>
+
+  <body>
+    <section>
+      <div class="my-10 border-2 border-full">
+        <div class="flex content-center p-0">
+          <div class="col-6 border-right logo">
+            <img src="assets/images/logo2.png" alt="" />
+            <!-- <p class="ml-5"> <strong>Reference Number:</strong> <span class="bg-yellow"> ${REF}</span> </p> -->
+          </div>
+          <div id="head-1" class="col-6 col-sm-6 border-right2 text-left">
+            <p id="head-2" class="">
+              <strong>Client Feedback Form F/CSD/03</strong>
+            </p>
+          </div>
+          <div class="col-6 text-left">
+            <p class="ml-5"></p>
+            <p>
+              Rev. No.1 <br />
+              Issue Date: <br />
+              ${DATE_OF_ISSUE} <br />
+              Page 1 of 2
+            </p>
+            <!-- <strong> Date of Issue:</strong> <span class="bg-yellow">28/05/2023</span> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="border-top border-2 bg-grey flex content-center p-0 mt-60 ">
+            <div class="w-full border-full border-2  text-center border-bottom-none border-top-none ">
+                <p><strong>I - PROJECT INFORMATION</strong></p>
+            </div>
+        </div>
+        <div class="border-top flex content-center p-0  " style="border-top: 2px solid; border-left: 1px solid;
+        border-right: 1px solid;">
+
+            <div class="col-6 border-full border-right-none border-bottom-none border-top-none text-left">
+                <p><strong>Proposal Name: <span class="bg-yellow">${PROPOSER}</span> </strong></p>
+            </div>
+
+            <div class="col-6  border-full border-left-none border-bottom-none border-top-none text-left">
+                <p><strong></strong></p>
+            </div>
+        </div>
+
+        <div class=" flex content-center p-0  " style="border-left: 1px solid;
+        border-right: 1px solid;">
+            <div class="col-6 border-full border-right-none border-top-none text-left">
+                <p><strong>Contact: Email\ <span class="bg-yellow"> ww.k66@hotmail.com</span></strong></p>
+            </div>
+
+            <div class="col-6 border-full  border-left-none border-top-none text-left">
+                <p><strong>Mobile\ <span class="bg-yellow">0531917534</span> </strong></p>
+            </div>
+        </div>
+
+
+        <div class=" flex content-center p-0  " style="border-left: 1px solid;
+        border-right: 1px solid;">
+
+            <div class="col-6 border-full border-right-none border-bottom-none border-top-none text-left">
+                <p><strong>Principal/Owner: <span class="bg-yellow">${OWNER}</span> </strong></p>
+            </div>
+
+            <div class="col-6  border-full border-left-none border-bottom-none border-top-none text-left">
+                <p><strong></strong></p>
+            </div>
+        </div>
+
+        <div class=" flex content-center p-0  " style="border-left: 1px solid;
+        border-right: 1px solid;">
+            <div class="col-6 border-full border-right-none border-top-none text-left">
+                <p><strong>Contact: Email\ <span class="bg-yellow">ww.k66@hotmail.com</span> </strong></p>
+            </div>
+
+            <div class="col-6 border-full  border-left-none border-top-none text-left">
+                <p><strong>Mobile\ <span class="bg-yellow">0531917534</span> </strong></p>
+            </div>
+        </div>
+
+
+        <div class=" flex content-center p-0  " style="border-left: 1px solid;
+                border-right: 1px solid;">
+
+            <div class="col-6 border-full border-right-none border-bottom-none border-top-none text-left">
+                <p><strong>Design Engineering Office: <span class="bg-yellow">${STRUCTURAL_DESIGNER}</span> </strong>
+                </p>
+            </div>
+
+            <div class="col-6  border-full border-left-none border-bottom-none border-top-none text-left">
+                <p><strong></strong></p>
+            </div>
+        </div>
+
+        <div class=" flex content-center p-0  " style="border-left: 1px solid;
+                border-right: 1px solid;">
+            <div class="col-6 border-full border-right-none border-top-none text-left">
+                <p><strong>Supervisor Engineering Office: <span class="bg-yellow">${Project_SUPERVISOR}</span> </strong>
+                </p>
+            </div>
+
+            <div class="col-6 border-full  border-left-none border-top-none text-left">
+                <p><strong></strong></p>
+            </div>
+        </div>
+
+
+        <div class=" flex content-center p-0  " style="border-left: 1px solid;
+                border-right: 1px solid;">
+
+            <div class="col-6 border-full border-right-none border-bottom-none border-top-none text-left">
+                <p><strong>Project Title: <span class="bg-yellow"> ${PROJECT_TITLE}</span></strong></p>
+            </div>
+
+            <div class="col-6  border-full border-left-none border-bottom-none border-top-none text-left">
+                <p><strong>Proposed Used: <span class="bg-yellow"> ${OCCUPATION}</span></strong></p>
+            </div>
+        </div>
+
+        <div class=" flex content-center p-0  " style="border-left: 1px solid;
+                border-right: 1px solid;">
+            <div class="col-6 border-full border-bottom-none border-right-none border-top-none text-left">
+                <p><strong>Address of the Premises: <span class="bg-yellow"> ${ADDRESS}</span></strong></p>
+            </div>
+
+            <div class="col-6 border-full border-bottom-none border-left-none border-top-none text-left">
+                <p><strong></strong></p>
+            </div>
+
+
+        </div>
+        <div class=" flex content-center p-0  "
+            style=" height: 50px; border-left: 1px solid; border-bottom: 2px solid; border-right: 1px solid;">
+            <div class="col-6 border-full border-bottom-none border-right-none border-top-none text-left">
+                <p><strong>Project description: <span class="bg-yellow"> ${B148}. ${B149}</span></strong></p>
+            </div>
+
+            <div class="col-6 border-full border-bottom-none  border-left-none border-top-none text-left">
+                <p><strong></strong></p>
+            </div>
+        </div> -->
+
+      <div class="border-top border-2 bg-grey flex content-center p-0 mt-60">
+        <div class="w-full border-full border-2 text-center border-bottom-none">
+          <p><strong>II - PROJECT COST ANALYSIS</strong></p>
+        </div>
+      </div>
+      <div
+        class="flex content-center p-0 border-2 border-full border-top-none border-bottom-none"
+      >
+        <div
+          class="col-6 border-full border-right-none text-left border-left-none"
+        >
+          <p>
+            Visit Date <span style="width: 20px; display: inline-block"></span>
+            <span class="bg-yellow"></span>
+          </p>
+        </div>
+        <div class="col-6 border-full border-right-none text-left">
+          <p>
+            <strong
+              >${DATE_OF_ISSUE}
+              <span style="width: 40px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div class="col-6 border-full border-right-none text-left">
+          <p>
+            Reference number
+            <span style="width: 40px; display: inline-block"></span>
+          </p>
+        </div>
+
+        <div class="col-6 border-full text-left border-right-none">
+          <p>
+            <strong
+              >${REF} <span style="width: 96px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="flex content-center p-0 border-2 border-full border-top-none border-bottom-none"
+      >
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left border-left-none"
+        >
+          <p>
+            Inspect Stage
+            <span style="width: 100px; display: inline-block"></span>
+            <span class="bg-yellow"> </span>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >${Stage}
+              <span style="width: 100px; display: inline-block"></span>
+              <span class="bg-yellow"> </span
+            ></strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p class="light">
+            Inspector Name
+            <span style="width: 100px; display: inline-block"></span>
+            <span class="bg-yellow"> </span>
+          </p>
+        </div>
+
+        <div
+          class="col-6 border-full border-top-none text-left border-right-none"
+        >
+          <p>
+            <strong
+              >${Username}
+              <span style="width: 76px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="flex content-center p-0 border-2 border-full border-top-none border-bottom-none"
+      >
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left border-left-none"
+        >
+          <p class="light">
+            Owner Name <span style="width: 31px; display: inline-block"></span>
+            <span class="bg-yellow"></span>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >${OWNER}
+              <span style="width: 31px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            Contractor Name
+            <span style="width: 31px; display: inline-block"></span>
+            <span class="bg-yellow"></span>
+          </p>
+        </div>
+
+        <div
+          class="col-6 border-full border-top-none text-left border-right-none"
+        >
+          <p>
+            <strong
+              >${Contractor}
+              <span style="width: 64px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="flex content-center p-0 border-2 border-full border-top-none border-bottom-none"
+      >
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left border-left-none"
+        >
+          <p>
+            Owner Email
+            <span style="width: 44px; display: inline-block"></span>
+            <span class="bg-yellow"></span>
+          </p>
+        </div>
+
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >${Omail}
+              <span style="width: 44px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            Contractor Email
+            <span style="width: 44px; display: inline-block"></span>
+            <span class="bg-yellow"></span>
+          </p>
+        </div>
+
+        <div
+          class="col-6 border-full border-top-none text-left border-right-none"
+        >
+          <p>
+            <strong
+              >${Cmail}<span style="width: 20px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex content-center p-0 border-2 border-full border-top-none border-bottom-none"
+      >
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left border-left-none"
+        >
+          <p>
+            Owner Phone no.
+            <span style="width: 44px; display: inline-block"></span>
+            <span class="bg-yellow"></span>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >${Onumber}
+              <span style="width: 44px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            Contractor Phone no.
+            <span style="width: 44px; display: inline-block"></span>
+            <span class="bg-yellow"></span>
+          </p>
+        </div>
+
+        <div
+          class="col-6 border-full border-top-none text-left border-right-none"
+        >
+          <p>
+            <strong
+              >${Cnumber}
+              <span style="width: 20px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+      </div>
+      <div class="flex content-center p-0 border-2 border-full border-top-none">
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left border-left-none border-bottom-none"
+        >
+          <p>
+            Contacted by:
+            <span style="width: 44px; display: inline-block"></span>
+            <span class="bg-yellow"></span>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left border-bottom-none"
+        >
+          <p>
+            <strong
+              >${By} <span style="width: 44px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left border-bottom-none"
+        >
+          <p>
+            Contacted via<span
+              style="width: 44px; display: inline-block"
+            ></span>
+            <span class="bg-yellow"></span>
+          </p>
+        </div>
+
+        <div
+          class="col-6 border-full border-top-none text-left border-right-none border-bottom-none"
+        >
+          <p>
+            <strong>
+              ${Via} <span style="width: 20px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+      </div>
+      <div class="border-top border-2 bg-grey flex content-center p-0 mt-60">
+        <div
+          class="w-full border-full border-2 text-center border-bottom-none"
+        ></div>
+      </div>
+
+      <div
+        class="flex content-center p-0 border-2 border-full border-top-none border-bottom-none"
+      >
+        <div
+          class="border-full border-right-none border-top-none text-left border-left-none"
+        >
+          <p>
+            <strong
+              >SN. <span style="width: 44px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >Comments &rarr;
+              <span style="width: 220px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >Excellent
+              <span style="width: 20px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >Good <span style="width: 20px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >Satisfactory<span
+                style="width: 20px; display: inline-block"
+              ></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+
+        <div
+          class="col-6 border-full border-top-none text-left border-right-none"
+        >
+          <p>
+            <strong>
+              Average <span style="width: 20px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-top-none text-left border-right-none"
+        >
+          <p>
+            <strong>
+              Poor <span style="width: 20px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="flex content-center p-0 border-2 border-full border-top-none border-bottom-none"
+      >
+        <div
+          class="border-full border-right-none border-top-none text-left border-left-none"
+        >
+          <p>
+            <strong
+              >1. <span style="width: 44px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>Quality and reliability of Inspection</p>
+          <p dir="rtl" class="text-right">
+            <strong>
+              جودة وموثوقية الفحص الفني؟
+              <span style="width: 220px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >${E1} <span style="width: 44px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >${G1} <span style="width: 44px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >${S1}<span style="width: 44px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+
+        <div class="col-6 border-full border-top-none text-left">
+          <p>
+            <strong>
+              ${A1}<span style="width: 20px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-top-none text-left border-left-none border-right-none"
+        >
+          <p>
+            <strong>
+              ${P1}<span style="width: 20px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="flex content-center p-0 border-2 border-full border-top-none border-bottom-none"
+      >
+        <div
+          class="border-full border-right-none border-top-none text-left border-left-none"
+        >
+          <p>
+            <strong
+              >2. <span style="width: 44px; display: inline-block"></span>
+              <span class="bg-yellow"> </span
+            ></strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>Reporting</p>
+          <p dir="rtl" class="text-right">
+            <strong>
+              جودة تقارير الفاحص الفني؟
+              <span style="width: 220px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >${E2} <span style="width: 44px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >${G2} <span style="width: 44px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >${S2}<span style="width: 44px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+
+        <div class="col-6 border-full border-top-none text-left">
+          <p>
+            <strong>
+              ${A2}<span style="width: 20px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-top-none text-left border-left-none border-right-none"
+        >
+          <p>
+            <strong>
+              ${P2}<span style="width: 20px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="flex content-center p-0 border-2 border-full border-top-none border-bottom-none"
+      >
+        <div
+          class="border-full border-right-none border-top-none text-left border-left-none"
+        >
+          <p class="light">
+            <strong>
+              3. <span style="width: 44px; display: inline-block"></span>
+              <span class="bg-yellow"></span
+            ></strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>Technical knowledge of our staff</p>
+          <p dir="rtl" class="text-right">
+            <strong>
+              المعرفة التقنية للفاحص الفني؟
+              <span style="width: 220px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >${E3} <span style="width: 44px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >${G3} <span style="width: 44px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >${S3}<span style="width: 44px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+
+        <div class="col-6 border-full border-top-none text-left">
+          <p>
+            <strong>
+              ${A3}<span style="width: 20px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-top-none text-left border-left-none border-right-none"
+        >
+          <p>
+            <strong>
+              ${P3}<span style="width: 20px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="flex content-center p-0 border-2 border-full border-top-none border-bottom-none"
+      >
+        <div
+          class="border-full border-right-none border-top-none text-left border-left-none"
+        >
+          <p>
+            <strong
+              >4. <span style="width: 44px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>Response for handling Complaints / issues</p>
+          <p dir="rtl" class="text-right">
+            <strong>
+              مستوى الرد على الشكاوى والاستفسارات؟
+
+              <span style="width: 220px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >${E4} <span style="width: 44px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >${G4} <span style="width: 44px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >${S4}<span style="width: 44px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+
+        <div class="col-6 border-full border-top-none text-left">
+          <p>
+            <strong>
+              ${A4}<span style="width: 20px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-top-none text-left border-left-none border-right-none"
+        >
+          <p>
+            <strong>
+              ${P4}<span style="width: 20px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex content-center p-0 border-2 border-full border-top-none border-bottom-none"
+      >
+        <div
+          class="border-full border-right-none border-top-none text-left border-left-none"
+        >
+          <p>
+            <strong
+              >5. <span style="width: 44px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>Attitude and staff behaviour</p>
+          <p dir="rtl" class="text-right">
+            <strong>
+              مدى رضاك عن اسلوب وتعامل الفاحص الفني؟
+
+              <span style="width: 220px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >${E5} <span style="width: 44px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >${G5} <span style="width: 44px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >${S5}<span style="width: 44px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+
+        <div class="col-6 border-full border-top-none text-left">
+          <p>
+            <strong>
+              ${A5}<span style="width: 20px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-top-none text-left border-left-none border-right-none"
+        >
+          <p>
+            <strong>
+              ${P5}<span style="width: 20px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="flex content-center p-0 border-2 border-full border-top-none border-bottom-none"
+      >
+        <div
+          class="border-full border-right-none border-top-none text-left border-left-none"
+        >
+          <p>
+            <strong
+              >6. <span style="width: 44px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>Overall performance</p>
+          <p dir="rtl" class="text-right">
+            <strong
+              >التقييم العام
+
+              <span style="width: 220px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >${E6} <span style="width: 44px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >${G6} <span style="width: 44px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >${S6}<span style="width: 44px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+
+        <div class="col-6 border-full border-top-none text-left">
+          <p>
+            <strong>
+              ${A6}<span style="width: 20px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-top-none text-left border-left-none border-right-none"
+        >
+          <p>
+            <strong>
+              ${P6}<span style="width: 20px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="flex content-center p-0 border-2 border-full border-top-none border-bottom-none"
+      >
+        <div
+          class="border-full border-right-none border-top-none text-left border-left-none"
+        >
+          <p>
+            <strong
+              >SN. <span style="width: 44px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >Comments &rarr;
+              <span style="width: 220px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >Excellent
+              <span style="width: 20px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >Good <span style="width: 20px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left"
+        >
+          <p>
+            <strong
+              >Satisfactory<span
+                style="width: 20px; display: inline-block"
+              ></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+
+        <div class="col-6 border-full border-top-none text-left">
+          <p>
+            <strong>
+              Average <span style="width: 20px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-top-none text-left border-left-none border-right-none"
+        >
+          <p>
+            <strong>
+              Poor <span style="width: 20px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+      </div>
+
+      <div class="border-top border-2 bg-grey flex content-center p-0 mt-60">
+        <div
+          class="w-full border-full border-2 text-center border-bottom-none"
+        ></div>
+      </div>
+
+      <div
+        class="flex content-center p-0 border-2 border-full border-bottom-none border-top-none"
+      >
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left border-left-none"
+        >
+          <p>
+            <strong>
+              Any other Suggestions for improvement
+              <span style="width: 220px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-top-none text-left border-right-none border-top-none"
+        >
+          <p dir="rtl" class="text-right">
+            <strong>
+              هل يوجد اي اقتراحات لتحسين الخدمة؟
+              <span style="width: 220px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="flex content-center p-0 border-2 border-full border-bottom-none border-top-none"
+      >
+        <div
+          class="col-12 border-full border-right-none border-top-none text-center border-left-none border-right-none"
+        >
+          <p>
+            <strong>
+              ${Q7}
+
+              <span style="width: 220px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="flex content-center p-0 border-2 border-full border-bottom-none border-top-none"
+      >
+        <div
+          class="col-6 border-full border-right-none border-top-none text-left border-left-none"
+        >
+          <p>
+            <strong>
+              Reason or remark for below satisfactory rating
+              <span style="width: 220px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div
+          class="col-6 border-full border-top-none text-left border-right-none"
+        >
+          <p dir="rtl" class="text-right">
+            <strong>
+              سبب اعطاء تقييم منخفض للفاحص الفني؟
+              <span style="width: 220px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+        <div class="flex content-center p-0"></div>
+      </div>
+
+      <div
+        class="flex content-center p-0 border-2 border-full border-bottom-none border-top-none"
+      >
+        <div
+          class="col-12 border-full border-top-none text-center border-left-none border-right-none"
+        >
+          <p>
+            <strong>
+              ${Q8}
+
+              <span style="width: 220px; display: inline-block"></span>
+              <span class="bg-yellow"></span>
+            </strong>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="flex content-center p-0 border-2 border-full border-bottom-none border-top-none"
+      >
+        <div
+          class="col-12 border-full border-top-none text-left border-left-none border-right-none"
+        >
+          <p>
+            Please note that this is just for improving ourselves. So, please
+            feel free and give us your fair opinion, so that we can perform
+            better in near future.
+
+            <span
+              style="width: 220px; display: inline-block; font-weight: 700"
+            ></span>
+            <span class="bg-yellow"></span>
+          </p>
+        </div>
+      </div>
+
+      <div class="flex content-center p-0">
+        <div class="col-12 border-full border-top-none text-left border-2">
+          <p>&#10006; THIS FEEDBACK FORM ISSUED TO AND COMPLETED BY CLIENT</p>
+          <p>&#9744; CARRIED OUT OVER THE PHONE BY ……………..</p>
+
+          <span
+            style="width: 220px; display: inline-block; font-weight: 700"
+          ></span>
+          <span class="bg-yellow"></span>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
